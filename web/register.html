@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Admission</title>
+        
+         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css"><link>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <div class="container">
+        <div class="logo">
+              <img src="image/pngwing.com.png" class="logo">
+              </div>
+        <div class="nav_bar">
+           
+              
+                <ul class="items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Student</a></li>
+                    <li><a href="signin.html">Sign IN</a></li>
+                    <li><a href="register.html">Register Student</a></li>
+                   
+                </ul>
+        
+        </div>
+        </div>
+        <form action="RegisterStudent" method="POST" class="form-container" onsubmit=" return validate()">
+             <p id="error"></p>
+            <h3>Student Admission</h3>
+            <div class ="form-grp">
+                <label for="number">Registration Number</label><br>
+                <input type="number" name="registrationNumber" placeholder="Registration Number" id="user">
+               
+            </div>
+             <div class ="form-grp">
+                <label for="username">First Name</label><br>
+                <input type="text" name="firstName" placeholder="first name" id="user">
+                <i class="fa fa-times u_times"></i>
+                <i class="fa fa-check u_check"></i>
+            </div>
+             <div class ="form-grp">
+                <label for="username">Last Name</label><br>
+                <input type="text" name="lastName" placeholder="Last name" id="pass">
+                <i class="fa fa-times p_times"></i>
+                <i class="fa fa-check p_check"></i>
+            </div>
+            <div class ="form-grp">
+                <label for="email">Email</label><br>
+                <input type="email"  name="email" placeholder="enter your email" id="pass">
+                <i class="fa fa-times p_times"></i>
+                <i class="fa fa-check p_check"></i>
+            </div>
+            <div class ="form-grp">
+                <label for="number">Phone Number</label><br>
+                <input type="text" name="phoneNumber" placeholder="phone number" id="pass">
+                <i class="fa fa-times p_times"></i>
+                <i class="fa fa-check p_check"></i>
+            </div>
+            <div class ="form-grp">
+                <label for="address">Address</label><br>
+                <input type="text" name="address" placeholder="address" id="pass">
+               
+            </div>
+            <div class ="form-grp">
+                <label for="gender">Gender</label><br>
+                <input type="text" name="gender" placeholder="Male or Female" id="pass">
+           
+            </div>
+            <div class ="form-grp">
+                <label for="dateOfBirth">Date of Birth</label><br>
+                <input type="date" name="date" placeholder="date" id="pass">
+                
+            </div>
+             <div class ="form-grp">
+                <label for="country">Country</label><br>
+                <input type="text" name="country" placeholder="country" id="pass">
+               
+             </div>
+             <div class ="form-grp">
+                <label for="occupation">Occupation</label><br>
+                <input type="text" name="occupation" placeholder="occupation" id="pass">
+             
+             </div>
+
+             <div class ="form-grp">
+                <input type="submit" name="login-btn" value="Register">
+            </div>
+            
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
